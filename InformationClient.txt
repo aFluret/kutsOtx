@@ -1,0 +1,14 @@
+имя:kate,
+логин: kate@mail.ru 
+имя:alex,
+логин: alex@mail.ru 
+имя:Юра,
+логин: ura@mail.ru 
+имя:sotrud,
+логин: axe@inbox.ru 
+имя:store,
+логин: axe1@inbox.ru 
+имя:qwer,
+логин: qwer 
+имя:asd,
+логин: asd 

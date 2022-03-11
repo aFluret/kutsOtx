@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBoxLogin" prefHeight="383.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <AnchorPane id="AnchorPane" fx:id="registerLabel" prefHeight="383.0" prefWidth="471.0" style="-fx-background-color: #778899;">
+            <children>
+                <Button layoutX="277.0" layoutY="264.0" mnemonicParsing="false" onAction="#ActionLogin" prefHeight="35.0" prefWidth="130.0" text="Войти" textFill="#030303">
+                    <font>
+                        <Font name="Sitka Small" size="12.0" />
+                    </font></Button>
+                <TextField id="text-field" fx:id="emailField" layoutX="70.0" layoutY="121.0" prefHeight="35.0" prefWidth="338.0" promptText="Почта" />
+                <Label layoutX="127.0" layoutY="33.0" prefHeight="35.0" prefWidth="255.0" text="Авторизация" textAlignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman Bold" size="36.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" layoutX="70.0" layoutY="167.0" prefHeight="35.0" prefWidth="338.0" promptText="Пароль" />
+                <Button cancelButton="true" layoutX="70.0" layoutY="311.0" mnemonicParsing="false" onAction="#ActionBack" prefHeight="35.0" prefWidth="92.0" text="Назад" textFill="#131313">
+                    <font>
+                        <Font name="Simplex" size="12.0" />
+                    </font>
+                </Button>
+                <Button layoutX="277.0" layoutY="319.0" mnemonicParsing="false" onAction="#ActionRegister" prefHeight="35.0" prefWidth="130.0" text="Регистрация" textFill="#080808" />
+            <Label layoutX="178.0" layoutY="337.0" text="Нет аккаунта?" textFill="#1bd130" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

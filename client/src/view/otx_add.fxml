@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="VBoxRegister" prefHeight="439.0" prefWidth="534.0" style="-fx-background-color: #228B22;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OtxController">
+    <children>
+        <AnchorPane prefHeight="440.0" prefWidth="497.0" style="-fx-background-color: #778899;">
+            <children>
+                <Button cancelButton="true" layoutX="67.0" layoutY="332.0" mnemonicParsing="false" onAction="#ActionBack" prefHeight="40.0" prefWidth="102.0" text="Назад" textFill="#050505">
+                    <font>
+                        <Font name="Simplex" size="12.0" />
+                    </font></Button>
+                <Label layoutX="156.0" layoutY="26.0" prefHeight="40.0" prefWidth="219.0" text="Добавление отхода " textFill="#3e3232">
+                    <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="cardAdd" layoutX="198.0" layoutY="332.0" mnemonicParsing="false" onAction="#CardRegister" prefHeight="40.0" prefWidth="102.0" text="Cохранить" textFill="#101010">
+                    <font>
+                        <Font name="Sitka Small" size="12.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="nameOtx" layoutX="64.0" layoutY="121.0" prefHeight="40.0" prefWidth="320.0" promptText="Название отхода" style="-fx-border-color: black;" />
+            <Separator layoutX="-4.0" layoutY="84.0" prefHeight="6.0" prefWidth="540.0" />
+            <ChoiceBox fx:id="typeOtx" layoutX="171.0" layoutY="179.0" prefHeight="32.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="classOtx" layoutX="171.0" layoutY="229.0" prefHeight="32.0" prefWidth="150.0" />
+            <Label layoutX="67.0" layoutY="175.0" prefHeight="40.0" prefWidth="70.0" text="Тип отхода" textFill="#3e3232" />
+            <Label layoutX="67.0" layoutY="224.0" prefHeight="40.0" prefWidth="85.0" text="Класс отхода" textFill="#3e3232" />
+            <Label layoutX="67.0" layoutY="275.0" prefHeight="40.0" prefWidth="85.0" text="Количество" textFill="#3e3232" />
+            <TextField fx:id="countOtx" layoutX="171.0" layoutY="275.0" prefHeight="40.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>
